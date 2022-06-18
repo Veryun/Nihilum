@@ -10,6 +10,7 @@ flask-marshmallow = "*"
 flask-sqlalchemy = "*"
 marshmallow-sqlalchemy = "*"
 flask-smorest = "*"
+colorama = "*"
 
 [dev-packages]
 
