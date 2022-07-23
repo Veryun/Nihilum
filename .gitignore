@@ -2,4 +2,6 @@
 /.env
 /.python-version
 /.idea
+config.py
 __pycache__
+*.db

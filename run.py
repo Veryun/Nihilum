@@ -1,4 +1,3 @@
-from Nihilum import create_app
+from Nihilum import app
 
-app = create_app()
 app.run()

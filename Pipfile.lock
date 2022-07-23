@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "aa0ca99e8a6ca113302c9f02f69f77d651ee5b338173d763ffd11c5ec83842e3"
+            "sha256": "1ee8c3b11de152cb8c26f7ce0912d716802bb8398f767c845b3beeaef121d446"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -16,6 +16,14 @@
         ]
     },
     "default": {
+        "alembic": {
+            "hashes": [
+                "sha256:a2d4d90da70b30e70352cd9455e35873a255a31402a438fe24815758d7a0e5e1",
+                "sha256:b5ae4bbfc7d1302ed413989d39474d102e7cfa158f6d5969d2497955ffe85a30"
+            ],
+            "index": "pypi",
+            "version": "==1.8.0"
+        },
         "apispec": {
             "extras": [
                 "marshmallow"
@@ -151,6 +159,14 @@
             ],
             "markers": "python_version >= '3.7'",
             "version": "==3.1.2"
+        },
+        "mako": {
+            "hashes": [
+                "sha256:23aab11fdbbb0f1051b93793a58323ff937e98e34aece1c4219675122e57e4ba",
+                "sha256:9a7c7e922b87db3686210cf49d5d767033a41d4010b284e747682c92bddd8b39"
+            ],
+            "markers": "python_version >= '3.7'",
+            "version": "==1.2.0"
         },
         "markupsafe": {
             "hashes": [
