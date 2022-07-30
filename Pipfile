@@ -11,6 +11,7 @@ flask-sqlalchemy = "*"
 marshmallow-sqlalchemy = "*"
 flask-smorest = "*"
 colorama = "*"
+alembic = "*"
 
 [dev-packages]
 
