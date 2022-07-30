@@ -5,3 +5,8 @@
 config.py
 __pycache__
 *.db
+/alembic/versions/12af8991077b_create_users_table.py
+/alembic.ini
+/alembic/env.py
+/alembic/README
+/alembic/script.py.mako

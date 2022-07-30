@@ -2,7 +2,7 @@ from flask.views import MethodView
 from flask_smorest import Blueprint
 from Nihilum.models.user import User
 from Nihilum.schema.user import UserSchema, UserPostSchema
-import json
+from Nihilum.errors import ObjectNotFound
 
 user_blueprint = Blueprint("user", __name__, url_prefix="/user")
 
@@ -23,4 +23,14 @@ class UserEndpoint(MethodView):
 
     @user_blueprint.response(200, schema=UserSchema)
     def get(self, user_id) -> User:
-        return User.query.get(user_id)
+        user = User.query.get(user_id)
+        if not user:
+            raise ObjectNotFound
+        return user
+
+    @user_blueprint.response(200)
+    def delete(self, user_id):
+        user_to_delete = User.query.get(user_id)
+        if not user_to_delete:
+            raise ObjectNotFound
+        user_to_delete.delete()
