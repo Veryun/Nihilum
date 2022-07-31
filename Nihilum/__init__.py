@@ -1,3 +1,5 @@
+import os
+from flask_migrate import Migrate
 from flask import Flask
 from Nihilum.api.user import user_blueprint
 from Nihilum.api.errors import error_blueprint
@@ -9,3 +11,4 @@ app.config.from_object('config')
 app.register_blueprint(user_blueprint)
 app.register_blueprint(error_blueprint)
 db.init_app(app)
+migrate = Migrate(app, db)

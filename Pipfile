@@ -12,6 +12,8 @@ marshmallow-sqlalchemy = "*"
 flask-smorest = "*"
 colorama = "*"
 alembic = "*"
+flask-migrate = "*"
+flask-script = "*"
 
 [dev-packages]
 
