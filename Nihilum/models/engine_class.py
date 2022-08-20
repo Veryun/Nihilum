@@ -3,8 +3,8 @@ from Nihilum.models import db
 from Nihilum.models.associations import engine_fuel_association, engine_failure_association
 
 
-class Engine(db.Model, BaseMixin):
-    __tablename__ = 'engine'
+class EngineClass(db.Model, BaseMixin):
+    __tablename__ = 'engine_class'
     thrust = db.Column(db.Float, nullable=False)
     power_consumption = db.Column(db.Float, nullable=False)
     size = db.Column(db.Integer, nullable=False)  # cubic centimeters

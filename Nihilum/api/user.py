@@ -19,7 +19,7 @@ class UsersEndpoint(MethodView):
 
 
 @user_blueprint.route("/<user_id>")
-class UserEndpoint(MethodView):
+class UserEndpoint(MethodView):  # Gets ONE user
 
     @user_blueprint.response(200, schema=UserSchema)
     def get(self, user_id) -> User:
@@ -34,3 +34,12 @@ class UserEndpoint(MethodView):
         if not user_to_delete:
             raise ObjectNotFound
         user_to_delete.delete()
+
+
+@user_blueprint.route('/<user_id>/ship')
+class UserShipEndpoint(MethodView):
+
+    @user_blueprint.response(200)
+    def get(self, user_id) -> User:
+        ship = UserShip.query.get(user_id=user_id)
+        pass

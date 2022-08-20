@@ -7,10 +7,14 @@ from flask import current_app
 from alembic import context
 from Nihilum.models.associations import *
 from Nihilum.models.ship import Ship
-from Nihilum.models.engine import Engine
+from Nihilum.models.engine_class import EngineClass
+from Nihilum.models.engines import Engines
 from Nihilum.models.engine_failure import EngineFailure
 from Nihilum.models.fuel import Fuel
 from Nihilum.models.ship_class import ShipClass
+from Nihilum.models.weapon_class import WeaponClass
+from Nihilum.models.weapons import Weapons
+from Nihilum.models.ammo import Ammo
 
 # this is the Alembic Config object, which provides
 # access to the values within the .ini file in use.
